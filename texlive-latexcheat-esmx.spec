@@ -1,3 +1,9 @@
+# revision 16664
+# category Package
+# catalog-ctan /info/latexcheat/latexcheat-esmx
+# catalog-date 2010-01-10 00:40:15 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-latexcheat-esmx
 Version:	20100110
 Release:	1
@@ -23,6 +29,7 @@ scientific papers).
 %doc %{_texmfdistdir}/doc/latex/latexcheat-esmx/README
 %doc %{_texmfdistdir}/doc/latex/latexcheat-esmx/latexsheet-esmx.pdf
 %doc %{_texmfdistdir}/doc/latex/latexcheat-esmx/latexsheet-esmx.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -33,3 +40,5 @@ scientific papers).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
