@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-esmx.d
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This is a translation to Spanish (Castellano) of Winston
@@ -29,7 +27,6 @@ scientific papers).
 %doc %{_texmfdistdir}/doc/latex/latexcheat-esmx/README
 %doc %{_texmfdistdir}/doc/latex/latexcheat-esmx/latexsheet-esmx.pdf
 %doc %{_texmfdistdir}/doc/latex/latexcheat-esmx/latexsheet-esmx.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -40,5 +37,3 @@ scientific papers).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
