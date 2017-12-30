@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-latexcheat-esmx
-Version:	20100110
-Release:	10
+Version:	2.00
+Release:	1
 Summary:	A LaTeX cheat sheet, in Spanish
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latexcheat/latexcheat-esmx
