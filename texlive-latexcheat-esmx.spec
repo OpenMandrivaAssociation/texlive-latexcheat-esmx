@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-latexcheat-esmx
-Version:	2.00
+Version:	20170414
 Release:	1
 Summary:	A LaTeX cheat sheet, in Spanish
 Group:		Publishing
