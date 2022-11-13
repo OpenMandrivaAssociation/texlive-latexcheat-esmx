@@ -1,18 +1,12 @@
-# revision 16664
-# category Package
-# catalog-ctan /info/latexcheat/latexcheat-esmx
-# catalog-date 2010-01-10 00:40:15 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-latexcheat-esmx
-Version:	2.00
-Release:	2
+Version:	36866
+Release:	1
 Summary:	A LaTeX cheat sheet, in Spanish
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latexcheat/latexcheat-esmx
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-esmx.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-esmx.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-esmx.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-esmx.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,24 +24,10 @@ scientific papers).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100110-2
-+ Revision: 753135
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100110-1
-+ Revision: 718815
-- texlive-latexcheat-esmx
-- texlive-latexcheat-esmx
-- texlive-latexcheat-esmx
-- texlive-latexcheat-esmx
-
