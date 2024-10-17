@@ -3,7 +3,7 @@ Version:	36866
 Release:	2
 Summary:	A LaTeX cheat sheet, in Spanish
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/latexcheat/latexcheat-esmx
+URL:		https://www.ctan.org/tex-archive/info/latexcheat/latexcheat-esmx
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-esmx.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexcheat-esmx.doc.r%{version}.tar.xz
